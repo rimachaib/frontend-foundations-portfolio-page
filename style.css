@@ -1,33 +1,37 @@
+/* ---  Logo --- */
+.logo {
+	font-family: sans-serif;
+	font-size: 72px;
+	color: #02546d;
+	text-align: center;
+	letter-spacing: -3;
+	margin: 0;
+	padding: 20px 0 0 0;
+}
 
-/* Header - Flexbox*/
 .group {
 	display: flex;
 	flex-direction: row;
-  justify-content: space-evenly;
+	justify-content: space-evenly;
 }
 
 .item {
 	flex: 1;
 	margin: 5px 5px 5px 5px;
-  padding: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
 }
 
 /* ---  Navigation --- */
-header h1 {
-text-align: left;
-margin: 5px 5px 5px 0px;
-}
-
 header nav {
-display: flex;
-flex-direction: row;
-justify-content: right;
-margin: 5px 5px 5px 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 header nav ul {
 	display: flex;
-  flex-direction: row;
+	flex-direction: row;
+	padding-bottom: 0;
 }
 
 header nav ul li {
@@ -36,35 +40,77 @@ header nav ul li {
 }
 header nav ul li a {
 	text-decoration: none; /* Removes the underline from the link. */
-	margin: 0 20px 0 0;
-	/* Applies 20 pixels of margin to the right of each link creating a visual gap between the navigation links. */
+	padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+	color: #0eeded;
+}
+
+@media all and (min-width: 700px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.logo {
+		margin: 14px 0 14px 20px;
+		padding-top: 0;
+		font-size: 42px;
+	}
+
+	header nav {
+		margin-top: 14px;
+	}
+}
+
+/* -------  Flexbox ------- */
+
+.group {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.item {
+	flex: 1;
+	margin: 5px 5px 5px 5px;
+	padding: 10px 10px 10px 10px;
+}
+
+/* ---  (Desktop) Group --- */
+@media all and (min-width: 500px) {
+	.group {
+		flex-direction: row;
+		/*When the web browser is 600 pixels or larger the flex-direction becomes row instead of column*/
+	}
 }
 
 /* -------  General Styles ------- */
 section {
-margin: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
 }
 
 body {
 	background-color: #ffffff;
 	font-family: sans-serif;
-	color: #55403f;
 }
 
 header {
 	background-color: #e7e7e7;
-  margin: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
 }
 
 footer {
 	background-color: #e7e7e7;
-  color: #02546d;
+	color: #02546d;
 	height: 60px;
 	padding: 10px 10px 10px 10px;
-  margin: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
 }
-p, li {
-color: #000000;
+p,
+li {
+	color: #000000;
 }
 
 h1,
@@ -75,47 +121,47 @@ h4 {
 }
 
 .image-profile {
-  opacity:0.85;
-  width: 250px;
-  height: 300px;
-  object-fit: cover;
+	opacity: 0.85;
+	width: 250px;
+	height: 300px;
+	object-fit: cover;
 }
 
 .image-about {
-  opacity:0.85;
-  width: 100%;
+	opacity: 0.85;
+	width: 100%;
 }
 
 a {
-	font-family: sans-serif; 
-  display: inline-flex;
-  text-decoration: none;
-  list-style: none;
-  margin: 5px 5px 5px 5px;
+	font-family: sans-serif;
+	display: inline-flex;
+	text-decoration: none;
+	list-style: none;
+	margin: 5px 5px 5px 5px;
 	font-size: 15px;
 }
 a:link {
-	color: #2392b4;
+	color: #02546d;
 }
 a:visited {
 	color: #02546d;
 }
 a:hover {
-	color: #02546d;
+	color: #0eeded;
 }
 a:active {
-	color: #2392b4;	
+	color: #02546d;
 }
 
 div.polaroid {
-  width: 80%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 80%;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.container {
-  text-align: center;
-  padding: 10px 10px;
+	text-align: center;
+	padding: 10px 10px;
 }
 
 form label {
@@ -135,7 +181,7 @@ form textarea {
 	margin-bottom: 10px;
 }
 
-form input{
+form input {
 	border: 2px solid #02779b;
 }
 
@@ -154,12 +200,4 @@ form button {
 	background: #02779b;
 	color: #ffffff;
 	margin: 0 8px 10px 0;
-	
-
-/* ---  (Desktop) Groups & Items --- */
-@media all and (min-width: 600px) {
-	.group {
-		flex-direction: row;
-  /*When the web browser is 600 pixels or larger the flex-direction becomes row instead of column*/
-	}
 }
