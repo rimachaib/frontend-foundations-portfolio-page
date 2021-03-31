@@ -2,46 +2,43 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale = 1"/>
-    <!--initial-scale=1 sets the same zoom scale-->
+		<meta name="viewport" content="width=device-width, initial-scale = 1" />
+		<!--initial-scale=1 sets the same zoom scale-->
 		<title>Rima Chaib's Portfolio</title>
 		<link href="style.css" rel="stylesheet" type="text/css" />
 		<!--This is a link to my external stylesheet-->
 	</head>
 
 	<body>
-    <!--Header & Navigation-->
+		<!--Header & Navigation-->
 		<header class="group">
-      <div class="item">
-						<h1>Rima Chaib</h1>
-						<!-- This is the most important information I would like to highlight on my page so it is wrapped with a h1 tag -->
-      </div>
-      <div>
-            </div>
-						<nav>
-							<ul id="menu">
-								<li>
-									<a href="#"><strong>Home</strong></a>
-								</li>
-								<li>
-									<a href="#"><strong>About</strong></a>
-								</li>
-								<li>
-									<a href="#"><strong>Portfolio</strong></a>
-								</li>
-								<li>
-									<a href="#"><strong>Contact</strong></a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</section>
+			<div class="item">
+				<h1>Rima Chaib</h1>
+				<!-- This is the most important information I would like to highlight on my page so it is wrapped with a h1 tag -->
+			</div>
+			<div>
+				<nav>
+					<ul id="menu">
+						<li>
+							<a href="#home"><strong>Home</strong></a>
+						</li>
+						<li>
+							<a href="#about"><strong>About</strong></a>
+						</li>
+						<li>
+							<a href="#portfolio"><strong>Portfolio</strong></a>
+						</li>
+						<li>
+							<a href="#contact"><strong>Contact</strong></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 
 		<main>
 			<!--This is the main container, it holds the main content of my web page-->
-			<section>
+			<section id="home">
 				<div class="group">
 					<div class="item">
 						<h2>Hi &#x1F44B; I'm Rima!</h2>
@@ -51,7 +48,7 @@
 							alt="Woman in studio."
 							class="image-profile"
 						/>
-            <h3>Welcome to My Portfolio Page</h3>
+						<h3>Welcome to My Portfolio Page</h3>
 						<p>
 							I am a software developer based out of San Francisco, California. I am
 							passionate about exploration, growth, and adaptation and would love to
@@ -73,7 +70,7 @@
 
 			<hr />
 			<!--About Me-->
-			<section>
+			<section id="about">
 				<div class="group">
 					<div class="item">
 						<h3>About Me</h3>
@@ -94,97 +91,150 @@
 					</div>
 				</div>
 			</section>
-	<!--Responsive Photos--> 
-			<section>
+			<!--Responsive Photos-->
+			<div class="group">
+				<div class="item">
+					<img
+						src="images/mt-saint-helena.png"
+						alt="Rock climber on a sunny day."
+						class="image-about"
+					/>
+				</div>
+				<div class="item">
+					<img
+						src="images/clouds-rest.png"
+						alt="Hiking shoes in front of Half-Dome."
+						class="image-about"
+					/>
+				</div>
+				<div class="item">
+					<img
+						src="images/alabama-hills.png"
+						alt="Rock climber on a rock face with snow covered mountains in the background."
+						class="image-about"
+					/>
+				</div>
+				<div class="item">
+					<img
+						src="images/chefchaouen-morocco.png"
+						alt="Woman sitting on cobble steps."
+						class="image-about"
+					/>
+				</div>
+			</div>
+			<hr />
+			<!--Portfolio Section-->
+			<section id="portfolio">
+				<h2>Portfolio</h2>
 				<div class="group">
 					<div class="item">
-						<img
-							src="images/mt-saint-helena.png"
-							alt="Rock climber on a sunny day."
-							class="image-about"
-						/>
+						<div class="polaroid">
+							<img
+								src="images/screen-code.jpg"
+								alt="Pomodoro Timer"
+								style="width: 100%"
+							/>
+							<div class="container">
+								<h3>Pomodoro Timer</h3>
+								<p>
+									This is a description of the Pomordoro Timer I built. I'll share what
+									my goal was in creating it, the skills/languages I applied, and what I
+									learned doing it.
+								</p>
+								<p>Skills Used:</p>
+								<a href="https://github.com/rimachaib" target="_blank"
+									>GitHub Repository</a
+								>
+								<a href="" target="_blank">Project Link</a>
+							</div>
+						</div>
 					</div>
 					<div class="item">
-						<img
-							src="images/clouds-rest.png"
-							alt="Hiking shoes in front of Half-Dome."
-							class="image-about"
-						/>
+						<div class="polaroid">
+							<img
+								src="images/screen-code.jpg"
+								alt="Flashcard App"
+								style="width: 100%"
+							/>
+							<div class="container">
+								<h3>Flashcard App</h3>
+								<p>
+									This is a description of the FlashCard App I built. I'll share what my
+									goal was in creating it, the skills/languages I applied, and what I
+									learned doing it.
+								</p>
+								<p>Skills Used:</p>
+								<a href="https://github.com/rimachaib" target="_blank"
+									>GitHub Repository</a
+								>
+								<a href="" target="_blank">Project Link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="group">
+					<div class="item">
+						<div class="polaroid">
+							<img
+								src="images/screen-code.jpg"
+								alt="GrubDash App."
+								style="width: 100%"
+							/>
+							<div class="container">
+								<h3>GrubDash App</h3>
+								<p>
+									This is a description of the GrubDash App I built. I'll share what my
+									goal was in creating it, the skills/languages I applied, and what I
+									learned doing it.
+								</p>
+								<p>Skills Used:</p>
+								<a href="https://github.com/rimachaib" target="_blank"
+									>GitHub Repository</a
+								>
+								<a href="" target="_blank">Project Link</a>
+							</div>
+						</div>
 					</div>
 					<div class="item">
-						<img
-							src="images/alabama-hills.png"
-							alt="Rock climber on a rock face with snow covered mountains in the background."
-							class="image-about"
-						/>
-					</div>
-					<div class="item">
-						<img
-							src="images/chefchaouen-morocco.png"
-							alt="Woman sitting on cobble steps."
-							class="image-about"
-						/>
+						<div class="polaroid">
+							<img
+								src="images/screen-code.jpg"
+								alt="Backend Capstone."
+								style="width: 100%"
+							/>
+							<div class="container">
+								<h3>Backend Capstone</h3>
+								<p>
+									This is a description of the Backend Capstone project I built. I'll
+									share what my goal was in creating it, the skills/languages I applied,
+									and what I learned doing it.
+								</p>
+								<p>Skills Used:</p>
+								<a href="https://github.com/rimachaib" target="_blank"
+									>GitHub Repository</a
+								>
+								<a href="" target="_blank">Project Link</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
-			<hr>
- 		<!--Portfolio Section-->     
-<section>
-			<h2>Portfolio</h2>
-			<div class="group">
-				<div class="item">
-          <div class="polaroid">
-          <img src="images/screen-code.jpg" alt="Pomodoro Timer" style="width:100%">
-          <div class="container">
-          <h3>Pomodoro Timer</h3>
-					<p>This is a description of the Pomordoro Timer I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
-				</div>
-        </div>
-      </div>
-				<div class="item">
-          <div class="polaroid">
-          <img src="images/screen-code.jpg" alt="Flashcard App" style="width:100%">
-          <div class="container">
-          <h3>Flashcard App</h3>
-					<p>This is a description of the FlashCard App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
-				</div>
-        </div>
-        </div>
-        </div>
-        <div class="group">
-				<div class="item">
-          <div class="polaroid">
-          <img src="images/screen-code.jpg" alt="GrubDash App." style="width:100%">
-          <div class="container">
-          <h3>GrubDash App</h3>
-					<p>This is a description of the GrubDash App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
-				</div>
-        </div>
-        </div>
-				<div class="item">
-          <div class="polaroid">
-          <img src="images/screen-code.jpg" alt="Backend Capstone." style="width:100%">
-          <div class="container">
-          <h3>Backend Capstone</h3>
-					<p>This is a description of the Backend Capstone project I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
-				</div>
-			</div>
-      </div>
-      </div>
-		</section>
-      <hr>
+			<hr />
 
-    <!--Contact & Forms-->
-			<section>
+			<!--Contact & Forms-->
+			<section id="contact">
 				<div class="group">
 					<div class="item">
 						<h3>Get In Touch</h3>
-            <a href="mailto:rima.chaib@gmail.com?subject= Hi Rima!">Email</a>
-            <a href="https://www.linkedin.com/in/rimachaib/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/rimachaib" target="_blank">GitHub</a>
+						<a href="mailto:rima.chaib@gmail.com?subject= Hi Rima!">Email</a>
+						<a href="https://www.linkedin.com/in/rimachaib/" target="_blank"
+							>LinkedIn</a
+						>
+						<a href="https://github.com/rimachaib" target="_blank">GitHub</a>
 						<p>
 							If you have any questions or want to start a conversation please reach
-							out to me via one of the links abvoe or by sending me a message below.  I look forward to hearing from you!
+							out to me via one of the links abvoe or by sending me a message below. I
+							look forward to hearing from you!
 						</p>
 					</div>
 				</div>
@@ -192,7 +242,11 @@
 			<section>
 				<div class="group">
 					<div class="item">
-						<form action="#" method="POST">
+						<form
+							action="https://formspree.io/rima.chaib@gmail.com"
+							method="post"
+							method="POST"
+						>
 							<label for="user-name"> &#x1F58A;Name:</label>
 							<input
 								id="user-name"
@@ -227,9 +281,9 @@
 				</div>
 			</section>
 		</main>
-    <!--Footer-->
+		<!--Footer-->
 		<footer>
-				<h4>&#169; Rima Chaib 2020</h4>
+			<h4>&#169; Rima Chaib 2020</h4>
 		</footer>
 		<script src="script.js"></script>
 		<!--This is where I will link to a JavaScript file in the future-->
