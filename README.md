@@ -5,7 +5,10 @@ This responsive portfolio webpage written in HTML and CSS was created to fulfill
 - Follow a mobile-first development approach.
 - Use responsive navigation.
 
-![Settings Window](https://raw.github.com/rimachaib/frontend-foundations-portfolio-page/main/frontend-foundations-portfolio-page-mobile.png)
-![Settings Window](https://raw.github.com/rimachaib/frontend-foundations-portfolio-page/main/frontend-foundations-portfolio-page-desktop.png)
+## Mobile
+![Settings Window](https://raw.github.com/rimachaib/frontend-foundations-portfolio-page/main/screenshots/frontend-foundations-portfolio-page-mobile.png)
+
+## Desktop
+![Settings Window](https://raw.github.com/rimachaib/frontend-foundations-portfolio-page/main/screenshots/frontend-foundations-portfolio-page-desktop.png)
 
 
